@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".Recebidor">
 
+    <ImageView
+        android:id="@+id/imgRecebe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txRecebe"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/txRecebe"
+        android:layout_width="0dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="4dp"
+        android:text="Não tem texto ainda."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
