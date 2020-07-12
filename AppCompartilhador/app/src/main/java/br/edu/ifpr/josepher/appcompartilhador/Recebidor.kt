@@ -28,7 +28,7 @@ class Recebidor : AppCompatActivity() {
 
     private fun handleSendImage(intent: Intent?) {
         (intent?.getParcelableExtra<Parcelable>(Intent.EXTRA_STREAM) as? Uri)?.let {
-            // Update UI to reflect image being shared
+            imgRecebe.setImageURI(it)
 
         }
     }

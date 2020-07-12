@@ -8,14 +8,14 @@
 
     <Button
         android:id="@+id/btCompartilhar"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:text="Compartilhar"
+        app:layout_constraintBottom_toBottomOf="@+id/btImagem"
         app:layout_constraintEnd_toEndOf="@+id/campoTexto"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="@+id/campoTexto"
-        app:layout_constraintTop_toBottomOf="@+id/campoTexto" />
+        app:layout_constraintTop_toTopOf="@+id/btImagem" />
 
     <EditText
         android:id="@+id/campoTexto"
@@ -26,4 +26,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btImagem"
+        android:layout_width="176dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:text="Escolher imagem"
+        app:layout_constraintEnd_toStartOf="@+id/btCompartilhar"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoTexto" />
+
+    <ImageView
+        android:id="@+id/imgEscolhida"
+        android:layout_width="403dp"
+        android:layout_height="594dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btImagem"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>
